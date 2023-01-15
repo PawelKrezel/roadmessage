@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>
+	<title>message prompter</title>
+</head>
+<body class="text-center">
+	<div id="settings" class="text-center">
+		<h1 class="text-center">tell those drivers what you really think of them</h1>
+			<textarea id="message" class="form-control">type your message here...</textarea>
+			<div class="row-custom">
+				<input type="radio" class="formRadio" name="font" value="1" id="radio1">
+				<p class="formLabel" id="font1" style="margin-right: 4em;">&nbsp;this font</p>
+
+				<input type="radio" class="formRadio" name="font" value="2" id="radio2">
+				<p class="formLabel" id="font2">&nbsp;this font</p>
+			</div>
+			<button class="btn btn-primary form-control" onclick="read();">confirm</button>
+
+			<img id="animation" src="animation.gif" alt="animation of a phone being turned into horizontal position" style="display:none;"><br>
+			<button class="btn btn-primary" onclick="setUp()" id="proceedBtn" style="display:none;">I'm ready</button>
+	</div>
+
+	<div id="messageBlock" style="display:none;"></div>
+</body>
+</html>
