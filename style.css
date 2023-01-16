@@ -28,6 +28,7 @@ img{
 	max-height: 100vh;
 	min-width: 100000000vw;
 	text-align: left;
+	letter-spacing: 0.1em;
 }
 *{
 	max-height: 100vh;
