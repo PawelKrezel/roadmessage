@@ -22,11 +22,12 @@ img{
 	margin-top: 4em;
 }
 #messageBlock{
-	height: 100vh;
-	line-height: 100vh;
-	font-size: 65vh;
+	height: 98vh;
+	line-height: 98vh;
+	font-size: 48vh;
 	max-height: 100vh;
-	min-width: 100000000vw;
+	overflow-x: scroll;
+	white-space: nowrap;
 	text-align: left;
 	letter-spacing: 0.1em;
 }

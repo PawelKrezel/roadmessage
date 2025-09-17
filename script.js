@@ -13,12 +13,10 @@ function setUp(){
 	document.getElementById("settings").setAttribute("style", "display:none;");
 	document.getElementById("messageBlock").setAttribute("style", "font-family: "+selectedFont);
 	document.getElementById("messageBlock").innerHTML=selectedText;	
-	setInterval(showTime, 250);
+	setInterval(showTime, 5);
 	selectedTextCopy = selectedText;
 }
 
 function showTime(){
-	selectedText = selectedText.slice(1,selectedText.length);
-	if(selectedText.length<1){selectedText=selectedTextCopy;}
-	document.getElementById("messageBlock").innerHTML=selectedText;
+	document.getElementById("messageBlock").scrollBy(2, 0);
 }
